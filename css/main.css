@@ -1,6 +1,7 @@
 body {
-  background-color: rgb(240, 136, 32);
+  background-color: rgb(21, 115, 122);
   font-size: 34px;
+  color: aliceblue;
 }
 
 
@@ -21,5 +22,5 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #bd4343;
+  background-color: #43bd88;
 }
