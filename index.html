@@ -18,6 +18,38 @@
     <main>
       <h2>Kittens available for Adoption</h2>
 
+      <form id="new-pet-form">
+        <fieldset>
+          <!-- name breed imageName Insterests  -->
+          <legend>Add a new kitten for adoption</legend>
+          <label for="name">Pet Name</label>
+          <input type="text" id="name"/>
+
+          <label for="breed">PetBreed</label>
+          <input type="text" id="breed"/>
+
+          <label for="imgName">Image Name</label>
+          <input type="text" id="imgName"/>
+
+          <label for="interests">Pet Insterests</label>
+          <input type="text" id="interests"/>
+        </fieldset>
+        <fieldset>
+          <legend>Placement Information</legend>
+          <label>Is Good with Kids</label>
+          <input type="checkbox" id="kids" name="isGoodWithKids" />
+
+          <label>Is Good with Cats</label>
+          <input type="checkbox" id="cats" name="isGoodWithCats" />
+
+          <label>Is Good with Dogs</label>
+          <input type="checkbox" id="dogs" name="isGoodWithDogs" />
+        </fieldset>
+        <div>
+          <button type="reset" value="reset">Reset Form</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
 
 
 
@@ -30,7 +62,6 @@
 
 
 
-      
       <section id="kittenProfiles"></section>
       <table id="adoptPets-table"></table>
 

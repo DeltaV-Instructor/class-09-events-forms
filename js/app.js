@@ -1,9 +1,12 @@
 'use strict';
 console.log('js connected');
 
-// Problem Domain: the Cedar Rapids Kitten Rescue has tons of kittens who need good homes. One of the best ways to reach prospective adoptive homes is to have profiles for each kitten available on a website. There are hundreds of kittens, though, and only a few volunteers; it's too time-consuming to hand-code each kitten's profile on their website. They need a better way.
+let form = document.getElementById('new-pet-form');
+console.log(form);
 
 
+
+//building our objects
 function Pet(petName,breed,imageName,interests,isGoodWithKids,isGoodWithDogs,isGoodWithAnimals){
   this.petName = petName;
   this.breed = breed;
@@ -107,13 +110,24 @@ for(let i = 0; i < allPets.length; i++){
 
 
 
+//add in our form functionality
+//call our render function to see our objects and pets.
 
 
 
+//Set up the event listerners to listent to the submit event.
+//1. which element do we need? form variable
+//2.which event are we listening to? submit.
+//3.what code should I run?   run a function.
+
+function handleFormSubmitted(event){
+  event.preventDefault();
+  console.log('made it to the handle submit function');
+}
 
 
-
-
+// 2 parameters
+form.addEventListener('submit', handleFormSubmitted);
 
 
 
